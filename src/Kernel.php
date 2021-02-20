@@ -11,6 +11,14 @@ class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
 
+    public function boot()
+    {
+        if (!defined('API_SCHEMA_URL')) define('API_SCHEMA_URL', $_ENV['API_SCHEMA_URL'], true);
+        if (!defined('API_ENDPOINT_URL')) define('API_ENDPOINT_URL', $_ENV['API_ENDPOINT_URL'], true);
+
+        return parent::boot();
+    }
+
     protected function configureContainer(ContainerConfigurator $container): void
     {
         $container->import('../config/{packages}/*.yaml');

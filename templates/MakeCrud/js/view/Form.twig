@@ -1,0 +1,72 @@
+<template>
+    <Form
+            :itemID="itemID"
+            :prepareSubmitData="prepareSubmitData"
+            :formatItem="formatItem"
+            resourceName="{{ info.resourceTag }}"
+            getOperation="{{ info.getItemOperationMethodName }}"
+            postOperation="{{ info.postItemOperationMethodName }}"
+            patchOperation="{{ info.patchItemOperationMethodName }}"
+            :createItem="createItem"
+    >
+        <template #form-controls="{ item, errors, isSubmitting, fieldErrors }">
+            <v-row>
+                <v-col>
+                    <v-alert type="error" dismissible v-if="errors.form_error">
+{% verbatim %}          Ошибка: {{ errors.form_error }}{% endverbatim %}
+                    </v-alert>
+                </v-col>
+            </v-row>
+
+            <!--<v-row>-->
+                <!--<v-col>-->
+                    <!--<v-text-field label="Name" solo v-model="item.name" persistent-hint hint="Enter name" :error-messages="fieldErrors('name')"></v-text-field>-->
+                <!--</v-col>-->
+            <!--</v-row>-->
+        </template>
+    </Form>
+</template>
+
+<script>
+
+    import Form from './../../../component/Form.vue';
+
+    const submittedProperties = ['name'];
+
+    export default {
+        components: { Form },
+
+        data() {
+            return {
+
+            };
+        },
+
+        props: ['itemID'],
+
+        methods: {
+            prepareSubmitData(data) {
+                for (let key of Object.keys(data)) {
+
+                    if (!submittedProperties.includes(key)) {
+                        delete data[key];
+                    }
+                }
+
+                return data;
+            },
+
+            formatItem(item) {
+                return item;
+            },
+
+            createItem() {
+                return {
+
+                };
+            }
+        }
+
+    }
+
+</script>

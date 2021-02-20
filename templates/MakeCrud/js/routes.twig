@@ -1,0 +1,24 @@
+import List from './view/List.vue';
+import Edit  from './view/Edit.vue';
+import Add  from './view/Add.vue';
+
+export default [
+    {
+        name: '{{ info.frontendListPageRouteName }}',
+        path : '{{ info.frontendListPageUrl }}',
+        component: List,
+        meta: { pageTitle: '{{ info.frontendListPageTitle }}' }
+    },
+    {
+        name: '{{ info.frontendEditPageRouteName }}',
+        path : '{{ info.frontendEditPageUrl }}',
+        component: Edit,
+        meta: { pageTitle: '{{ info.frontendEditPageTitle }}' }
+    },
+    {
+        name: '{{ info.frontendAddPageRouteName }}',
+        path : '{{ info.frontendAddPageUrl }}',
+        component: Add,
+        meta: { pageTitle: '{{ info.frontendAddPageTitle }}' }
+    }
+];

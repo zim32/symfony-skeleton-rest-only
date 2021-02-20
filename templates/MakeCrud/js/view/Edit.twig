@@ -1,0 +1,25 @@
+<template>
+    <div>
+        <Form v-if="itemID" :itemID="itemID" />
+    </div>
+</template>
+
+<script>
+
+    import Form from './Form.vue';
+
+    export default {
+        components: {Form},
+
+        data() {
+            return {
+                itemID: null
+            };
+        },
+
+        mounted() {
+            this.itemID = this.$route.params['id'];
+        }
+    }
+
+</script>

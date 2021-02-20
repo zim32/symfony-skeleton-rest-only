@@ -1,6 +1,17 @@
-controllers:
-    resource: ../../src/Controller/
+api_v1:
+    resource: ../../src/Controller/Api/V1
     type: annotation
+    prefix: /api/v1
+    name_prefix: api_v1_
+    defaults:
+      _format: json
+
+app:
+    resource: ../../src/Controller/App
+    type: annotation
+    name_prefix: app_
+    defaults:
+      _format: json
 
 kernel:
     resource: ../../src/Kernel.php
