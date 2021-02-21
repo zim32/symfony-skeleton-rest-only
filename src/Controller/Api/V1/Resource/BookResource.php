@@ -3,19 +3,16 @@
 namespace App\Controller\Api\V1\Resource;
 
 use App\Controller\Api\V1\ApiController;
-use App\Controller\Api\V1\Crud\BaseGetItemsSetup;
-use App\Controller\Api\V1\Crud\BaseGetItemSetup;
-use App\Controller\Api\V1\Crud\BasePostItemSetup;
-use App\Controller\Api\V1\Crud\BasePatchItemSetup;
-use App\Controller\Api\V1\Crud\BaseDeleteItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BaseDeleteItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BaseGetItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BaseGetItemsSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BasePatchItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BasePostItemSetup;
 use App\Entity\Book;
-use Doctrine\ORM\QueryBuilder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use OpenApi\Annotations as OA;
-use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\Filter\NumberFilter;
-use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterService;
 
 class BookResource extends ApiController
 {

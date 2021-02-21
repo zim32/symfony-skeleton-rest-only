@@ -3,11 +3,6 @@
 namespace App\Controller\Api\V1\Resource;
 
 use App\Controller\Api\V1\ApiController;
-use App\Controller\Api\V1\Crud\BaseGetItemsSetup;
-use App\Controller\Api\V1\Crud\BaseGetItemSetup;
-use App\Controller\Api\V1\Crud\BasePostItemSetup;
-use App\Controller\Api\V1\Crud\BasePatchItemSetup;
-use App\Controller\Api\V1\Crud\BaseDeleteItemSetup;
 use App\Entity\Book;
 use App\Entity\BookAuthor;
 use Doctrine\ORM\QueryBuilder;
@@ -17,6 +12,11 @@ use Symfony\Component\Routing\Annotation\Route;
 use OpenApi\Annotations as OA;
 use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\Filter\NumberFilter;
 use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterService;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BaseDeleteItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BaseGetItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BaseGetItemsSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BasePatchItemSetup;
+use Zim\Bundle\SymfonyRestHelperBundle\Controller\Setup\BasePostItemSetup;
 
 class BookAuthorResource extends ApiController
 {
