@@ -2,13 +2,13 @@
 
 namespace App\Controller\Api\V1;
 
-use App\OpenApi\Processor\GroupSchemesProcessor;
 use OpenApi\Analysis;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\Mapping\Factory\ClassMetadataFactoryInterface;
+use Zim\Bundle\SymfonyRestHelperBundle\OpenApi\Processor\GroupSchemesProcessor;
 
 /**
  * @Route(path="/doc")
@@ -20,7 +20,7 @@ class SwaggerController extends AbstractController
      */
     public function doc()
     {
-        $response = $this->render('Swagger/ui.html.twig', ['schemaUrl' => API_SCHEMA_URL]);
+        $response = $this->render('@ZimSymfonyRestHelper/Swagger/ui.html.twig', ['schemaUrl' => API_SCHEMA_URL]);
         $response->headers->set('content-type', 'text/html');
 
         return $response;

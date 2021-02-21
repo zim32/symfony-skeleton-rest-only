@@ -9,10 +9,13 @@ use App\Controller\Api\V1\Crud\BasePostItemSetup;
 use App\Controller\Api\V1\Crud\BasePatchItemSetup;
 use App\Controller\Api\V1\Crud\BaseDeleteItemSetup;
 use App\Entity\Book;
+use Doctrine\ORM\QueryBuilder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use OpenApi\Annotations as OA;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\Filter\NumberFilter;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterService;
 
 class BookResource extends ApiController
 {
@@ -49,6 +52,7 @@ class BookResource extends ApiController
     public function getBooks(Request $request)
     {
         return $this->handleGetItemsOperation($request, Book::class, new class extends BaseGetItemsSetup {
+
 
         }, ['BookAuthorList']);
     }

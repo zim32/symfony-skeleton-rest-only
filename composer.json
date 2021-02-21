@@ -1,6 +1,7 @@
 {
     "type": "project",
-    "license": "proprietary",
+    "description": "REST template project based on Symfony framework",
+    "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -36,6 +37,7 @@
         "symfony/yaml": "5.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0",
+        "zim32/symfony-rest-helper-bundle": ">=0.0.1",
         "zircote/swagger-php": "^3.1"
     },
     "require-dev": {

@@ -2,9 +2,9 @@
 
 namespace App\Controller\Api\V1\Crud;
 
-use App\Component\RequestFilter\RequestFilterService;
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Component\HttpFoundation\Request;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterService;
 
 class BaseGetItemsSetup
 {

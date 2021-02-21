@@ -2,8 +2,6 @@
 
 namespace App\Controller\Api\V1\Resource;
 
-use App\Component\RequestFilter\Filter\NumberFilter;
-use App\Component\RequestFilter\RequestFilterService;
 use App\Controller\Api\V1\ApiController;
 use App\Controller\Api\V1\Crud\BaseGetItemsSetup;
 use App\Controller\Api\V1\Crud\BaseGetItemSetup;
@@ -17,6 +15,8 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use OpenApi\Annotations as OA;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\Filter\NumberFilter;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterService;
 
 class BookAuthorResource extends ApiController
 {
@@ -57,12 +57,8 @@ class BookAuthorResource extends ApiController
             public function filterItems(QueryBuilder $qb, string $field, $value, Request $request, RequestFilterService $requestFilter)
             {
                 switch ($field) {
-                    case 'name':
-                        $value = mb_strtolower($value);
-                        $qb->andWhere($qb->expr()->like('LOWER(m.name)', $qb->expr()->literal('%'.$value.'%')));
-                        break;
                     case 'age':
-                        $requestFilter->filter(NumberFilter::class, $qb, 'm.' . $field, $value);
+                        $requestFilter->filter(NumberFilter::class, $qb, 'm.'.$field, $value);
                         break;
                 }
             }

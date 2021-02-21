@@ -493,6 +493,9 @@
     "webmozart/assert": {
         "version": "1.9.1"
     },
+    "zim32/symfony-rest-helper-bundle": {
+        "version": "v0.0.1"
+    },
     "zircote/swagger-php": {
         "version": "3.1.0"
     }

@@ -30,6 +30,6 @@ services:
 
     # PART OF SYMFONY SKELETON
     _instanceof:
-      App\Component\RequestFilter\RequestFilterInterface:
+      Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterInterface:
         tags: ['app.request_filter']
     # /PART OF SYMFONY SKELETON

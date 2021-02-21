@@ -2,9 +2,6 @@
 
 namespace App\Controller\Api\V1;
 
-use App\CircularReferableInterface;
-use App\Component\Paginator\Paginator;
-use App\Component\RequestFilter\RequestFilterService;
 use App\Controller\Api\V1\Crud\BaseDeleteItemSetup;
 use App\Controller\Api\V1\Crud\BaseGetItemSetup;
 use App\Controller\Api\V1\Crud\BaseGetItemsSetup;
@@ -27,6 +24,9 @@ use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use Zim\Bundle\SymfonyRestHelperBundle\CircularReferableInterface;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\Paginator\Paginator;
+use Zim\Bundle\SymfonyRestHelperBundle\Component\RequestFilter\RequestFilterService;
 
 /**
  * @OA\OpenApi(

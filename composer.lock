@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec24f8b221e18d2047f4e7ac0149a39b",
+    "content-hash": "c3b2beee62b5a00f6ad5bf50d4c138a3",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -7180,6 +7180,56 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.9.1"
             },
             "time": "2020-07-08T17:02:28+00:00"
+        },
+        {
+            "name": "zim32/symfony-rest-helper-bundle",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zim32/symfony-rest-helper-bundle.git",
+                "reference": "82356627e4743db6c12965af31bc8a5f957242b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zim32/symfony-rest-helper-bundle/zipball/82356627e4743db6c12965af31bc8a5f957242b6",
+                "reference": "82356627e4743db6c12965af31bc8a5f957242b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "symfony/console": "^5.2",
+                "symfony/framework-bundle": "^5.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Zim\\Bundle\\SymfonyRestHelperBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yurij Uvarov",
+                    "email": "yurij.uvarov@gmail.com",
+                    "homepage": "https://github.com/zim32"
+                }
+            ],
+            "description": "Bundle for symfony rest template project",
+            "homepage": "https://github.com/zim32/symfony-rest-helper-bundle",
+            "keywords": [
+                "api",
+                "bundle",
+                "rest",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/zim32/symfony-rest-helper-bundle/issues",
+                "source": "https://github.com/zim32/symfony-rest-helper-bundle/tree/v0.0.1"
+            },
+            "time": "2021-02-20T15:23:42+00:00"
         },
         {
             "name": "zircote/swagger-php",
