@@ -4,6 +4,13 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Yurij Uvarov",
+            "email": "yurij.uvarov@gmail.com",
+            "homepage": "https://github.com/zim32"
+        }
+    ],
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
