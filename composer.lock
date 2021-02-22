@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3b2beee62b5a00f6ad5bf50d4c138a3",
+    "content-hash": "532c337f2c0235116b85006a064ac4fa",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -81,16 +81,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.11.1",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad"
+                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
-                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b17c5014ef81d212ac539f07a1001832df1b6d3b",
+                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b",
                 "shasum": ""
             },
             "require": {
@@ -105,11 +105,6 @@
                 "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
@@ -150,9 +145,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.11.1"
+                "source": "https://github.com/doctrine/annotations/tree/1.12.1"
             },
-            "time": "2020-10-26T10:28:16+00:00"
+            "time": "2021-02-21T21:00:45+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1747,16 +1742,16 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "7959c5ee8d50e75b8e39ff9e11041208c22a542a"
+                "reference": "c544710aa18e079baf0027ca4c8236913f46945b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/7959c5ee8d50e75b8e39ff9e11041208c22a542a",
-                "reference": "7959c5ee8d50e75b8e39ff9e11041208c22a542a",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/c544710aa18e079baf0027ca4c8236913f46945b",
+                "reference": "c544710aa18e079baf0027ca4c8236913f46945b",
                 "shasum": ""
             },
             "require": {
@@ -1805,7 +1800,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/4.1.1"
+                "source": "https://github.com/lcobucci/jwt/tree/4.1.2"
             },
             "funding": [
                 {
@@ -1817,7 +1812,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-16T09:59:04+00:00"
+            "time": "2021-02-19T19:37:15+00:00"
         },
         {
             "name": "lexik/jwt-authentication-bundle",
@@ -7183,22 +7178,22 @@
         },
         {
             "name": "zim32/symfony-rest-helper-bundle",
-            "version": "v0.0.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zim32/symfony-rest-helper-bundle.git",
-                "reference": "82356627e4743db6c12965af31bc8a5f957242b6"
+                "reference": "4f3b588ed9880690d58b058a186d71c406abfc1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zim32/symfony-rest-helper-bundle/zipball/82356627e4743db6c12965af31bc8a5f957242b6",
-                "reference": "82356627e4743db6c12965af31bc8a5f957242b6",
+                "url": "https://api.github.com/repos/zim32/symfony-rest-helper-bundle/zipball/4f3b588ed9880690d58b058a186d71c406abfc1c",
+                "reference": "4f3b588ed9880690d58b058a186d71c406abfc1c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1",
-                "symfony/console": "^5.2",
-                "symfony/framework-bundle": "^5.2"
+                "symfony/console": "5.2.*",
+                "symfony/framework-bundle": "5.2.*"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -7227,9 +7222,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zim32/symfony-rest-helper-bundle/issues",
-                "source": "https://github.com/zim32/symfony-rest-helper-bundle/tree/v0.0.1"
+                "source": "https://github.com/zim32/symfony-rest-helper-bundle/tree/v1.0.0"
             },
-            "time": "2021-02-20T15:23:42+00:00"
+            "time": "2021-02-21T21:38:52+00:00"
         },
         {
             "name": "zircote/swagger-php",
