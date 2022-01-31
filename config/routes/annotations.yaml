@@ -1,3 +1,11 @@
+api_v1:
+    resource: ../../src/Controller/Api/V1
+    type: annotation
+    prefix: /api/v1
+    name_prefix: api_v1_
+    defaults:
+        _format: json
+
 controllers:
     resource: ../../src/Controller/
     type: annotation
