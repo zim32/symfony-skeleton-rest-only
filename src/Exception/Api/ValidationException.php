@@ -23,7 +23,7 @@ class ValidationException extends BaseApiException
 
         foreach ($errors as $error) {
             if (!array_key_exists($error->getPropertyPath(), $payload)) {
-                $payload = [];
+                $payload[$error->getPropertyPath()] = [];
             }
 
             $payload[$error->getPropertyPath()][] = $error->getMessage();
