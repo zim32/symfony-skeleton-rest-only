@@ -1,4 +1,5 @@
 {
+    "name": "zim32/symfony-skeleton-rest-only",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "dev",
