@@ -82,15 +82,6 @@
             "require": "6.1.*"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "/home/zim32/www/symfony-rest-helper-bundle",
-            "options": {
-                "symlink": false
-            }
-        }
-    ],
     "require-dev": {
         "symfony/maker-bundle": "^1.43"
     }
